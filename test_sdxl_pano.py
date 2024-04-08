@@ -19,7 +19,7 @@ pipe.scheduler = EulerAncestralDiscreteScheduler.from_config(pipe.scheduler.conf
 embedding_path = hf_hub_download(repo_id="jbilcke-hf/sdxl-panorama", filename="embeddings.pti", repo_type="model")
 embhandler = TokenEmbeddingsHandler(text_encoders, tokenizers)
 embhandler.load_embeddings(embedding_path)
-prompt="hdri view, Create a panoramic view of a modern, sunlit kitchen, stretching across the image. On the left, include a stainless steel refrigerator beside tall wooden cabinets, in the style of <s0><s1>"
+prompt="hdri view, Create a panoramic view of a modern,  dining hall, stretching across the image. On the left, include a stainless steel refrigerator beside tall wooden cabinets, in the style of <s0><s1>"
 images = pipe(
     prompt,
     num_inference_steps=40,
