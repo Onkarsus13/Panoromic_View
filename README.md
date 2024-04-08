@@ -28,6 +28,8 @@ CUDA_VISIBLE_DEVICES=0 python3 test_controlnet.py
 CUDA_VISIBLE_DEVICES=0 python3 test__sdxl_pano.py
 ```
 
+You can find the visual results in the ```visual_results``` directory
+
 
 
 
